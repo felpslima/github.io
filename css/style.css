@@ -46,13 +46,16 @@ section.tabela, section.jogos{display: inline-block;vertical-align: top;}
 /* TABELA */
 section.tabela {padding: 100px 50px 10px 20px;}
 section.tabela th,section.tabela td{padding: 10px;}
-table{border-collapse: collapse;}
+table{border-collapse: collapse; margin-bottom: 40px;}
 table thead tr th:first-child{text-align: left;}
 table tbody tr{border-top: #c4c4c4 solid 1px;}
 table tbody tr:last-child{border-bottom: #c4c4c4 solid 1px;}
 table tbody tr td:nth-child(2){padding-right: 90px;} 
 table tbody tr td:nth-child(2n+3){background: #cecece61;}
 table tbody tr td:nth-child(1n+3){text-align: center;}
+
+section.tabela .patrocinio{display: inline-block;}
+section.tabela .patrocinio img{width: 130px; padding: 10px 20px;}
 
 /* JOGOS */
 section.jogos {border-left: 1px solid #7c7c7c;padding: 100px 20px 10px 50px;width: 50%;}
@@ -65,3 +68,5 @@ span.vs {font-size: 16px;}
 .jogo p {text-align: center;margin-bottom: 5px;}
 
 /* ARTILHARIA */
+section.artilheiros{padding: 20px;}
+.tabela-artilheiros{width:100%;}
