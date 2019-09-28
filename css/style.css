@@ -102,11 +102,12 @@ footer .patrocinio{margin-right: 30px;}
 }
 
 @media (max-width: 600px) {
-    header.topo img{left: 5px;}
-    section.tabela{display:block;}
+    header.topo img{left: 1px;}
+    section.tabela{display:block;padding: 60px 0 10px 0;}
     section.tabela div{overflow-x: auto;}
-    section.jogos{padding: 20px 0 20px 0; width: 100%;border: inherit;text-align: center;}
+    section.jogos{padding: 0 0 20px 0; width: 100%;border: inherit;text-align: center;}
     section.jogos h2{text-align: left;padding-left: 44px;}
     footer{text-align: center;}
     footer .patrocinadores{margin-left: 0;}
+    footer .patrocinio{margin-right: 0;}
 }
