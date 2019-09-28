@@ -30,35 +30,44 @@
     font-style: normal;
 }
 
+html,body{width: 100%;}
+
 main {font-family: 'Bignoodle', serif; background: #ededed;font-size: 18px; width: 100%; height: 100%;}
 
 h1{font-size: 36px;}
-h2{font-size: 30px;}
+h2{font-size: 30px;padding: 10px 20px;}
 h3{font-size: 26px;}
 
 /* TOPO */
-section.topo {padding: 10px 20px;background: #3b9c00;text-align: center;font-size: 20px;position: fixed;width: 100%;}
-section.topo img, section.topo h1{vertical-align: middle;}
-section.topo img{width: 56px;position: absolute;left: 100px;top: 0px;}
-section.topo h1{display: inline-block;color: #fff;}
+header.topo {padding: 10px 20px;background: #3b9c00; text-align: center; font-size: 20px; position: fixed; width: 100%;box-sizing: border-box;}
+header.topo img, header.topo h1{vertical-align: middle;}
+header.topo img{width: 56px;position: absolute;left: 11%;top: 0px;}
+header.topo h1{display: inline-block;color: #fff;}
 section.tabela, section.jogos{display: inline-block;vertical-align: top;}
 
-/* TABELA */
-section.tabela {padding: 100px 50px 10px 20px;}
-section.tabela th,section.tabela td{padding: 10px;}
-table{border-collapse: collapse; margin-bottom: 40px;}
-table thead tr th:first-child{text-align: left;}
-table tbody tr{border-top: #c4c4c4 solid 1px;}
-table tbody tr:last-child{border-bottom: #c4c4c4 solid 1px;}
-table tbody tr td:nth-child(2){padding-right: 90px;} 
-table tbody tr td:nth-child(2n+3){background: #cecece61;}
-table tbody tr td:nth-child(1n+3){text-align: center;}
+/* CONTEUDO */
+section.conteudo{padding: 0 8%;}
 
-section.tabela .patrocinio{display: inline-block;}
-section.tabela .patrocinio img{width: 130px; padding: 10px 20px;}
+/* TABELA */
+section.tabela {padding: 100px 30px 10px 20px;}
+section.tabela th,
+section.tabela td,
+section.artilheiros th,
+section.artilheiros td{padding: 10px;}
+section.tabela table,
+section.artilheiros{border-collapse: collapse; margin-bottom: 40px;}
+section.tabela table thead tr th:first-child,
+section.artilheiros table thead tr th:first-child{text-align: left;}
+section.tabela table tbody tr,
+section.artilheiros table tbody tr{border-top: #c4c4c4 solid 1px;}
+section.tabela table tbody tr:last-child,
+section.artilheiros table tbody tr:last-child{border-bottom: #c4c4c4 solid 1px;}
+section.tabela table tbody tr td:nth-child(2){padding-right: 30px;} 
+section.tabela table tbody tr td:nth-child(2n+3){background: #cecece61;}
+section.tabela table tbody tr td:nth-child(1n+3){text-align: center;}
 
 /* JOGOS */
-section.jogos {border-left: 1px solid #7c7c7c;padding: 100px 20px 10px 50px;width: 50%;}
+section.jogos {border-left: 1px solid #b6b6b6;padding: 100px 20px 10px 30px;width: 66%;box-sizing: border-box;}
 .rodada {display: inline-block;}
 .rodada h3{text-align: center;padding: 10px 20px 0 20px;}
 .jogo img {width: 40px;margin-bottom: 8px;}
@@ -68,5 +77,37 @@ span.vs {font-size: 16px;}
 .jogo p {text-align: center;margin-bottom: 5px;}
 
 /* ARTILHARIA */
-section.artilheiros{padding: 20px;}
-.tabela-artilheiros{width:100%;}
+section.artilheiros{padding: 20px;display: none;}
+section.artilheiros table thead tr th:first-child{padding-left: 60px;}
+section.artilheiros table tbody tr td:first-child{width: 10px;}
+section.artilheiros .tabela-artilheiros{width:100%;}
+section.artilheiros table thead tr th:last-child,
+section.artilheiros table tbody tr td:last-child{text-align: right;}
+section.artilheiros table tbody tr td:last-child{padding-right: 20px;}
+section.artilheiros .tabela-artilheiros td img{width: 20px;margin-right: 10px;border-radius: 50%;}
+
+/* RODAPE */
+footer{padding: 10px 15%;background: #3b9c00;width: 100%;color: #fff;box-sizing: border-box;}
+footer .patrocinadores, footer .patrocinio, footer .apoio{display: inline-block; vertical-align: top;}
+footer .patrocinadores{margin-left: 100px;}
+footer .patrocinio img, footer .apoio img{width: 170px; padding: 10px 0;}
+footer .patrocinio{margin-right: 30px;}
+
+@media (max-width: 1200px) {
+    section.jogos{width: 58%;}
+}
+
+@media (max-width: 1080px) {
+    section.jogos{width: 40%;}
+}
+
+@media (max-width: 600px) {
+    header.topo img{left: 1px;}
+    section.tabela{display:block;padding: 60px 0 10px 0;}
+    section.tabela div{overflow-x: auto;}
+    section.jogos{padding: 0 0 20px 0; width: 100%;border: inherit;text-align: center;}
+    section.jogos h2{text-align: left;padding-left: 44px;}
+    footer{text-align: center;}
+    footer .patrocinadores{margin-left: 0;}
+    footer .patrocinio{margin-right: 0;}
+}
