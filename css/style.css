@@ -68,13 +68,14 @@ section.tabela table tbody tr td:nth-child(1n+3){text-align: center;}
 
 /* JOGOS */
 section.jogos {border-left: 1px solid #b6b6b6;padding: 100px 20px 10px 30px;width: 66%;box-sizing: border-box;}
-.rodada {display: inline-block;}
+.rodada {display: inline-block;vertical-align: top;}
 .rodada h3{text-align: center;padding: 10px 20px 0 20px;}
 .jogo img {width: 40px;margin-bottom: 8px;}
 .jogo {text-align: center; border-bottom: 1px solid #c4c4c4; padding: 20px 20px;}
 span.placar {font-size: 30px;padding: 10px 20px 0 20px;}
 span.vs {font-size: 16px;}
 .jogo p {text-align: center;margin-bottom: 5px;}
+a.m-momentos {display: inherit;font-size: 12px;color: #3b9c00;text-decoration: none;}
 
 /* ARTILHARIA */
 section.artilheiros{padding: 20px;}
