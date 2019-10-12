@@ -67,11 +67,11 @@ section.tabela table tbody tr td:nth-child(2n+3){background: #cecece61;}
 section.tabela table tbody tr td:nth-child(1n+3){text-align: center;}
 
 /* JOGOS */
-section.jogos {border-left: 1px solid #b6b6b6;padding: 100px 20px 10px 30px;width: 66%;box-sizing: border-box;}
+section.jogos {border-left: 1px solid #b6b6b633;padding: 100px 20px 10px 30px;width: 66%;box-sizing: border-box;}
 .rodada {display: inline-block;vertical-align: top;}
 .rodada h3{text-align: center;padding: 10px 20px 0 20px;}
 .jogo img {width: 40px;margin-bottom: 8px;}
-.jogo {text-align: center; border-bottom: 1px solid #c4c4c4; padding: 20px 20px;}
+.jogo {text-align: center;border-bottom: 1px solid #c4c4c4;padding: 20px 20px;min-height: 71px;min-width: 200px;}
 span.placar {font-size: 30px;padding: 10px 20px 0 20px;}
 span.vs {font-size: 16px;}
 .jogo p {text-align: center;margin-bottom: 5px;}
@@ -86,6 +86,13 @@ section.artilheiros table thead tr th:last-child,
 section.artilheiros table tbody tr td:last-child{text-align: right;}
 section.artilheiros table tbody tr td:last-child{padding-right: 20px;}
 section.artilheiros .tabela-artilheiros td img{width: 20px;margin-right: 10px;border-radius: 50%;}
+
+/* REDES */
+.redes {background: #cecece;position: relative;height: 38px;}
+.rede{display: inline-block;position: absolute;}
+.rede img {height: 40px;}
+.rede.instagram {left: 150px;}
+.rede.youtube {left: 200px;}
 
 /* RODAPE */
 footer{padding: 10px 15%;background: #3b9c00;width: 100%;color: #fff;box-sizing: border-box;}
@@ -108,7 +115,8 @@ footer .patrocinio{margin-right: 30px;}
     section.tabela div{overflow-x: auto;}
     section.jogos{padding: 0 0 20px 0; width: 100%;border: inherit;text-align: center;}
     section.jogos h2{text-align: left;padding-left: 44px;}
-    footer{text-align: center;}
+    .rede{position: initial;}
+    footer,.redes{text-align: center;}
     footer .patrocinadores{margin-left: 0;}
     footer .patrocinio{margin-right: 0;}
 }
