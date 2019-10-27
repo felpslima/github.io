@@ -46,10 +46,10 @@ header.topo h1{display: inline-block;color: #fff;}
 section.tabela, section.jogos{display: inline-block;vertical-align: top;}
 
 /* CONTEUDO */
-section.conteudo{padding: 0 8%;}
+section.conteudo{padding: 0 6%;}
 
 /* TABELA */
-section.tabela {padding: 100px 30px 10px 20px;}
+section.tabela {padding: 100px 20px 10px 0px;}
 section.tabela th,
 section.tabela td,
 section.artilheiros th,
@@ -67,7 +67,7 @@ section.tabela table tbody tr td:nth-child(2n+3){background: #cecece61;}
 section.tabela table tbody tr td:nth-child(1n+3){text-align: center;}
 
 /* JOGOS */
-section.jogos {border-left: 1px solid #b6b6b633;padding: 100px 20px 10px 30px;width: 66%;box-sizing: border-box;}
+section.jogos {border-left: 1px solid #b6b6b633;padding: 100px 0px 10px 20px;width: 65%;box-sizing: border-box;}
 .rodada {display: inline-block;vertical-align: top;}
 .rodada h3{text-align: center;padding: 10px 20px 0 20px;}
 .jogo img {width: 40px;margin-bottom: 8px;}
